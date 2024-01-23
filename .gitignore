@@ -12,6 +12,9 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+/package_interface/CABARET/data_save
+/package_interface/CABARET/*.exe
+/package_interface/CABARET/*.dat
 
 # Mono auto generated files
 mono_crash.*
