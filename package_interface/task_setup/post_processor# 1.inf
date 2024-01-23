@@ -1,0 +1,41 @@
+ &PPROC_PARAMETERS
+ POST_PROCESSOR_OUTPUT_FILE      = proc1.dat                     ,
+ OPERATIONS_NUMBER       =           5,
+ SAVE_TIME       =   100.000000000000     ,
+ SAVE_TIME_UNITS = microseconds        
+ /
+ &PPROC_OPERATION
+ FIELD_NAME      = 'temperature'                           ,
+ OPERATION_TYPE  = min_grad            ,
+ OPERATION_AREA  =           0, 2*1,        5001, 2*1,
+ OPERATION_AREA_DISTANCE = 3*0,
+ GRAD_PROJECTION =           1
+ /
+ &PPROC_OPERATION
+ FIELD_NAME      = 'specie_molar_concentration(H2O)'       ,
+ OPERATION_TYPE  = transducer          ,
+ OPERATION_AREA  =           0, 2*1,           0, 2*1,
+ OPERATION_AREA_DISTANCE = 3*0,
+ GRAD_PROJECTION =           0
+ /
+ &PPROC_OPERATION
+ FIELD_NAME      = 'density_droplets01'                    ,
+ OPERATION_TYPE  = transducer          ,
+ OPERATION_AREA  =           0, 2*1,           0, 2*1,
+ OPERATION_AREA_DISTANCE = 3*0,
+ GRAD_PROJECTION =           0
+ /
+ &PPROC_OPERATION
+ FIELD_NAME      = 'mass_droplets01'                       ,
+ OPERATION_TYPE  = transducer          ,
+ OPERATION_AREA  =           0, 2*1,           0, 2*1,
+ OPERATION_AREA_DISTANCE =         399, 2*0,
+ GRAD_PROJECTION =           0
+ /
+ &PPROC_OPERATION
+ FIELD_NAME      = 'mass_droplets01'                       ,
+ OPERATION_TYPE  = transducer          ,
+ OPERATION_AREA  =           0, 2*1,           0, 2*1,
+ OPERATION_AREA_DISTANCE =        -399, 2*0,
+ GRAD_PROJECTION =           0
+ /

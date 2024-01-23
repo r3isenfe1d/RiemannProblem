@@ -1,0 +1,33 @@
+! ============================================================================
+! |          NUI Galway - Combustion Chemistry Centre H2/CO mechanism        |
+! |            A. KEROMNES, W. K. METCALFE, S. BURKE, H. J. CURRAN           |
+! |                             September 2012                               |
+! ============================================================================
+! H2+O2<=>OH+OH                         2.5E+13       0.44        69200.0
+! ---------------------------    How to cite   -------------------------------
+!        An experimental and detailed chemical kinetic modeling study         
+!       of hydrogen and syngas mixture oxidation at elevated pressures        
+! A. Keromnes, W.K. Metcalfe, K.A. Heufer, N. Donohoe, A.K. Das,              
+! C-J Sung, J. Herzler, C. Naumann, P. Griebel, O. Mathieu, M.C. Krejci,      
+! E.L. Petersen, W.J. Pitz, H.J. Curran                                       
+! Combust. Flame (2013), http://dx.doi.org/10.1016/j.combustflame.2013.01.001 
+! Combustion and Flame 160 (2013) 995–1011                                    
+!-----------------------------------------------------------------------------
+
+
+ELEMENTS
+O  H  N
+END
+
+SPECIES
+O2    C7H16   N2      H2O     CO2
+END
+H2    O2      AR      HE      H       O       OH      H2O     HO2     H2O2 
+H2    O2      N2      O       H      OH      H2O     HO2     H2O2
+REACTIONS
+
+!C7H16+O2=>H2O+CO2                    7.07E+14       0.0         36567.0		!Kiverin
+
+C7H16+O2=>H2O+CO2                     3.35E+14       0.0         153.0 			!Pope(2005)	!kJ/mol
+
+END

@@ -1,0 +1,283 @@
+
+ELEMENTS
+O  H  N  C
+END
+
+SPECIES
+CO2     H2O     N2      C2H2    CO      O2
+END
+CO2     H2O     N2      C2H2    H2      O2
+H2      O2      AR      HE
+H       O       OH      H2O     HO2     H2O2 
+CO      CO2     CH      HCO     CH2O    CH2(S)  CH2     
+C2H2    C2H4    CH3     CH4     CH3O    C2H6    CH3OH   CH2OH   
+C2H     HCCO    C2H3    C4H2    CH2CO   CH3CO   CH2CHO  CH3CHO  
+C2H5
+
+REACTIONS
+01-04. H2-CO OXIDATION
+
+01. H2-O2 REACTIONS (NO HO2, H2O2)
+
+O2+H<=>OH+O                 2.00E+14      0.0      70.3        1
+H2+O<=>OH+H                 5.06E+04      2.67     26.3        2
+H2+OH<=>H2O+H               1.00E+08      1.6      13.8        3
+OH+OH<=>H2O+O               1.50E+09      1.14      0.42       4
+H+H+M<=>H2+M                1.80E+18     -1.0       0.0        5
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+O+O+M<=>O2+M                2.90E+17     -1.0       0.0        6
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+H+OH+M<=>H2O+M              2.20E+22     -2.0       0.0        7
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+
+02. HO2 FORMATION/CONSUMPTION
+
+H+O2+M<=>HO2+M              2.30E+18     -0.8       0.0        8
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/'  
+HO2+H<=>OH+OH               1.50E+14      0.0       4.20       9
+HO2+H<=>H2+O2               2.50E+13      0.0       2.90      10
+HO2+H<=>H2O+O               3.00E+13      0.0       7.20      11
+HO2+O<=>OH+O2               1.80E+13      0.0      -1.70      12
+HO2+OH<=>H2O+O2             6.00E+13      0.0       0.0       13
+
+03. H2O2 FORMATION/CONSUMPTION
+
+HO2+HO2<=>H2O2+O2           2.50E+11      0.0      -5.20      14
+OH+OH+M<=>H2O2+M            3.25E+22     -2.0       0.0       15
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+H2O2+H<=>H2+HO2             1.70E+12      0.0      15.7       16
+H2O2+H<=>H2O+OH             1.00E+13      0.0      15.0       17
+H2O2+O<=>OH+HO2             2.80E+13      0.0      26.8       18
+H2O2+OH<=>H2O+HO2           5.40E+12      0.0       4.20      19  
+
+04. CO REACTIONS
+
+CO+OH<=>CO2+H               6.00E+06      1.5      -3.10      20
+CO+HO2<=>CO2+OH             1.50E+14      0.0      98.7       21 
+CO+O+M<=>CO2+M              7.10E+13      0.0     -19.0       22
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+CO+O2<=>CO2+O               2.50E+12      0.0     200.0       23
+
+
+10-19. C1-HYDROCARBONS OXIDATION
+
+10. CH REACTIONS
+
+CH+O<=>CO+H                 4.00E+13      0.0       0.0       24
+CH+O2<=>HCO+O               6.00E+13      0.0       0.0       25
+CH+CO2<=>HCO+CO             3.40E+12      0.0       2.90      26
+CH+H2O<=>CH2O+H             3.80E+12      0.0      -3.20      27
+CH+H2O<=>CH2+OH          1.90E+12      0.0      -3.20      28
+CH+OH<=>HCO+H               3.00E+13      0.0       0.0       29
+
+11. HCO REACTIONS
+
+HCO+M<=>CO+H+M              7.10E+14      0.0      70.3       30
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+HCO+H<=>CO+H2               9.00E+13      0.0       0.0       31
+HCO+O<=>CO+OH               3.00E+13      0.0       0.0       32
+HCO+O<=>CO2+H               3.00E+13      0.0       0.0       33
+HCO+OH<=>CO+H2O             1.00E+14      0.0       0.0       34
+HCO+O2<=>CO+HO2             3.00E+12      0.0       0.0       35
+HCO+HCO<=>CH2O+CO           3.00E+13      0.0       0.0       36
+
+12. CH2 REACTIONS
+
+CH2+H<=>CH+H2            6.00E+12      0.0      -7.50      37
+CH2+O=>CO+H+H            8.40E+12      0.0       0.0       38
+CH2+CH2<=>C2H2+H2     1.20E+13      0.0       3.40      39
+CH2+CH2<=>C2H2+H+H    1.10E+14      0.0       3.40      40
+CH2+CH3<=>C2H4+H         4.20E+13      0.0       0.0       41
+CH2+O2<=>CO+OH+H         1.30E+13      0.0       6.20      42
+CH2+O2<=>CO2+H2          1.20E+13      0.0       6.20      43
+CH2(S)+M<=>CH2+M            1.20E+13      0.0       0.0       44
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+CH2(S)+O2<=>CO+OH+H            3.10E+13      0.0       0.0       45
+CH2(S)+H2<=>CH3+H              7.20E+13      0.0       0.0       46
+CH2(S)+CH3<=>C2H4+H            1.60E+13      0.0      -2.38      47
+
+13. CH2O REACTIONS
+
+CH2O+M<=>HCO+H+M            5.00E+16      0.0     320.0       48
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+CH2O+H<=>HCO+H2             2.30E+10      1.05     13.7       49
+CH2O+O<=>HCO+OH             4.15E+11      0.57     11.6       50
+CH2O+OH<=>HCO+H2O           3.40E+09      1.2      -1.90      51
+CH2O+HO2<=>HCO+H2O2         3.00E+12      0.0      54.7       52
+CH2O+CH3<=>HCO+CH4          1.00E+11      0.0      25.5       53
+CH2O+O2<=>HCO+HO2           6.00E+13      0.0     171.0       54
+
+14. CH3 REACTIONS
+
+CH3+M<=>CH2+H+M          6.90E+14      0.0     345.0       55
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+CH3+M<=>CH2+H+M          1.00E+16      0.0     379.0       56
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+CH3+O<=>CH2O+H              8.43E+13      0.0       0.0       57
+CH3+H<=>CH4                 1.93E+36     -7.0      38.0       58
+CH3+OH=>CH3O+H              2.26E+14      0.0      64.8       59
+CH3O+H=>CH3+OH              4.75E+16     -0.13     88.0       60
+CH3+O2=>CH2O+OH             3.30E+11      0.0      37.4       61
+CH3+HO2<=>CH3O+OH           1.80E+13      0.0       0.0       62
+CH3+HO2<=>CH4+O2            3.60E+12      0.0       0.0       63
+CH3+CH3=>C2H4+H2            1.00E+16      0.0     134.0       64
+CH3+CH3<=>C2H6              1.69E+53    -12.0      81.2       65
+
+15a. CH3O REACTIONS
+
+CH3O+M<=>CH2O+H+M           5.00E+13      0.0     105.00      66
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+CH3O+H<=>CH2O+H2            1.80E+13      0.0       0.0       67
+CH3O+O2<=>CH2O+HO2          4.00E+10      0.0       8.90      68
+CH2O+CH3O=>HCO+CH3OH        6.00E+11      0.0      13.8       69
+CH3OH+HCO=>CH2O+CH3O        6.50E+09      0.0      57.2       70
+CH3O+O<=>O2+CH3             1.10E+13      0.0       0.0       71
+CH3O+O<=>OH+CH2O            1.40E+12      0.0       0.0       72
+
+15b. CH2OH REACTIONS
+
+CH2OH+M<=>CH2O+H+M          5.00E+13      0.0     105.0       73
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+CH2OH+H<=>CH2O+H2           3.00E+13      0.0       0.0       74
+CH2OH+O2<=>CH2O+HO2         1.00E+13      0.0      30.0       75
+
+16. (CH3O2) REACTIONS
+
+CH3O2+M=>CH+O2+M            7.24E+16      0.0     111.0       76
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+CH3+O2+M=>CH3O2+M           1.41E+16      0.0      -4.60      77
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+CH3O2+CH2O=>HCO+CH3O2+H     1.30E+11      0.0      37.7       78
+CH3O2H+HCO=>CH3O2+CH2O      2.50E+10      0.0      42.3       79
+CH3O2+CH3=>CH3O+CH3O        3.80E+12      0.0      -5.0       80
+CH3O+CH3O=>CH3O2+CH3        2.00E+10      0.0       0.0       81
+CH3O2+HO2=>CH3O2H+O2        4.60E+10      0.0     -10.9       82
+CH3O2H+O2=>CH3O2+HO2        3.00E+12      0.0     163.0       83
+CH3O2+CH3O2=>CH2O+O2+CH3OH  1.80E+12      0.0       0.0       84
+CH3O2+CH3O2=>CH3O+CH3O+O2   3.70E+12      0.0       9.20      85
+
+17. (CH4) REACTIONS
+
+CH4+H<=>H2+CH3              1.30E+04      3.00     33.6       86
+CH4+O<=>OH+CH3              6.92E+08      1.56     35.5       87
+CH4+OH<=>H2O+CH3            1.60E+07      1.83     11.6       88
+CH4+HO2<=>H2O2+CH3          1.10E+13      0.0     103.0       89
+CH4+CH<=>C2H4+H             3.00E+13      0.0      -1.70      90
+CH4+CH2<=>CH3+CH3        1.30E+13      0.0      39.9       91
+
+18. (CH3OH) REACTIONS
+
+CH3OH<=>CH3+OH              9.51E+29     -4.3     404.0       92
+CH3OH+H<=>CH2OH+H2          4.00E+13      0.0      25.5       93
+CH3OH+O<=>CH2OH+OH          1.00E+13      0.0      19.6       94
+CH3OH+OH<=>CH2OH+H2O        1.00E+13      0.0       7.10      95
+CH3OH+HO2=>CH2OH+H2O2       6.20E+12      0.0      81.1       96
+CH2OH+H2O2=>HO2+CH3OH       1.00E+07      1.7      47.9       97
+CH3OH+CH3<=>CH4+CH2OH       9.00E+12      0.0      41.1       98
+CH3O+CH3OH=>CH2OH+CH3OH     2.00E+11      0.0      29.3       99
+CH2OH+CH3OH=>CH3O+CH3OH     2.20E+04      1.7      45.4      100
+CH3OH+CH2O=>CH3O+CH3O       1.53E+12      0.0     333.0      101
+CH3O+CH3O=>CH3OH+CH2O      3.00E+13      0.0       0.0      102
+
+19. (CH3O2H) REACTIONS
+
+!CH3O2H<=>CH3O+OH            4.00E+15      0.0     180.0      103
+!OH+CH3O2H<=>H2O+CH3O2       2.60E+12      0.0       0.0      104
+
+
+20-29. C2-HYDROCARBONS OXIDATION
+
+20. (C2H) REACTIONS
+
+C2H+O<=>CO+CH               1.00E+13      0.0       0.0      105
+C2H+O2<=>HCCO+O             3.00E+12      0.0       0.0      106
+
+21. (HCCO) REACTIONS
+
+HCCO+H<=>CH2+CO          1.50E+14      0.0       0.0      107
+HCCO+O=>CO+H+CO             9.60E+13      0.0       0.0      108
+HCCO+CH2<=>C2H3+CO       3.00E+13      0.0       0.0      109
+
+22. (C2H2) REACTIONS
+
+C2H2+M<=>C2H+H+M            3.60E+16      0.0     446.0      110
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+C2H2+O2<=>HCCO+OH           2.00E+08      1.5     126.0      111
+C2H2+H<=>C2H+H2             6.02E+13      0.0     116.0      112
+C2H2+O<=>CH2+CO          1.72E+04      2.8       2.10     113
+C2H2+O<=>HCCO+H             1.72E+04      2.8       2.10     114
+C2H2+OH<=>H2O+C2H           6.00E+13      0.0      54.2      115
+C2H2+C2H<=>C4H2+H           3.00E+13      0.0       0.0      116
+
+23. (CH2CO) REACTIONS
+
+CH2CO+M<=>CH2+CO+M       1.00E+16      0.0     248.0      117
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+CH2CO+H<=>CH3+CO            3.60E+13      0.0      14.1      118
+CH2CO+O<=>HCO+HCO           2.30E+12      0.0       5.70     119
+CH2CO+OH<=>CH2O+HCO         1.00E+13      0.0       0.0      120
+
+24. (C2H3) REACTIONS
+
+C2H3<=>C2H2+H               4.73E+40     -8.8     194.0      121
+C2H3+OH<=>C2H2+H2O          5.00E+13      0.0       0.0      122
+C2H3+H<=>C2H2+H2            1.20E+13      0.0       0.0      123
+C2H3+O<=>C2H2+OH            1.00E+13      0.0       0.0      124
+C2H3+O<=>CH3+CO             1.00E+13      0.0       0.0      125
+C2H3+O<=>HCO+CH2            1.00E+13      0.0       0.0      126
+C2H3+O2<=>HCO+CH2O          5.40E+12      0.0       0.0      127
+
+25a. (CH3CO) REACTIONS
+
+CH3CO<=>CH3+CO              2.32E+26     -5.0      75.1      128
+CH3CO+H<=>CH2CO+H2          2.00E+13      0.0       0.0      129
+
+25b. (CH2CHO) REACTIONS
+
+CH2CHO+H<=>CH2CO+H2         2.00E+13      0.0       0.0      130
+
+26. (C2H4) REACTIONS
+
+C2H4+M<=>C2H2+H2+M          7.50E+17      0.0     320.0      131
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+C2H4+M<=>C2H3+H+M           8.50E+17      0.0     404.0      132
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+C2H4+H<=>C2H3+H2            5.67E+14      0.0      62.9      133
+C2H4+O<=>H+CH2CHO           1.40E+06      2.08      0.0      134
+C2H4+O<=>HCO+CH3            2.42E+06      2.08      0.0      135
+C2H4+OH<=>C2H3+H2O          2.11E+13      0.0      24.9      136
+
+27. (CH3CHO) REACTIONS
+
+CH3CHO+M<=>CH3+HCO+M        7.00E+15      0.0     343.0      137
+'CH4/3.0/ O2/0.4/ H2O/6.5/ CO2/1.5/ CO/0.75/ N2/0.4/ H2/1.0/' 
+CH3CHO+H<=>CH3CO+H2         2.10E+09      1.16     10.1      138
+CH3CHO+H<=>H2+CH2O          2.00E+09      1.16     10.1      139
+CH3CHO+O<=>CH3CO+OH         5.00E+12      0.0       7.60     140
+CH3CHO+O<=>OH+CH2CHO        8.00E+11      0.0       7.60     141
+CH3CHO+O2<=>CH3CO+HO2       4.00E+13      0.0     164.0      142
+CH3CHO+OH<=>CH3CO+H2O       2.30E+10      0.73     -4.70     143
+CH3CHO+HO2<=>CH3CO+H2O2     3.00E+12      0.0      50.0      144
+CH3CHO+CH2<=>CH3CO+CH3      2.50E+12      0.0      15.9      145
+CH3CHO+CH3<=>CH3CO+CH4      2.00E+06      5.64     10.3      146
+
+28. (C2H5) REACTIONS
+
+C2H5<=>C2H4+H               1.02E+43     -9.1     224.0      147
+C2H5+H<=>CH3+CH3            3.00E+13      0.0       0.0      148
+C2H5+O<=>CH3CHO+H           5.00E+13      0.0       0.0      149
+C2H5+O<=>CH2O+CH3           1.00E+13      0.0       0.0      150
+C2H5+O2<=>C2H4+HO2          1.10E+10      0.0     -6.30      151
+C2H5+CH3<=>C2H4+CH4         1.14E+12      0.0       0.0      152
+C2H5+C2H5<=>C2H4+C2H6       1.40E+12      0.0       0.0      153
+
+29. (C2H6) REACTIONS
+
+C2H6+H=C2H5+H2            1.40E+09      1.5      31.1      154
+C2H6+O<=>C2H5+OH            1.00E+09      1.5      24.4      155
+C2H6+OH<=>C2H5+H2O          7.20E+06      2.0       3.60     156
+C2H6+HO2<=>C2H5+H2O2        1.70E+13      0.0      85.9      157
+C2H6+O2<=>C2H5+HO2          6.00E+13      0.0     217.0      158
+C2H6+CH2<=>C2H5+CH3         2.20E+13      0.0      36.3      159
+C2H6+CH3<=>C2H5+CH4         1.50E+07      6.0      25.4      160
+END

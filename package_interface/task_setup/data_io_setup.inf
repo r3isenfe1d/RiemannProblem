@@ -1,0 +1,12 @@
+ &DATA_IO_PARAMETERS
+ IO_FIELDS_NUMBER        =           7,
+ CHECK_TIME      =   5000.00000000000     ,
+ CHECK_TIME_UNITS        = "milliseconds        ",
+ OUTPUT_TIME     =   14400.00    ,
+ DATA_OUTPUT_FOLDER      = "data_output         "
+ /
+ &IO_FIELDS
+ IO_FIELDS_NAMES = "pressure                           ", "temperature                        ", "density                            
+", "density_droplets01                 ", "foam_marker                        ", "velocity                           ", "specie_molar
+_concentration         "
+ /

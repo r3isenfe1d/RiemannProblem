@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{B313105A-E536-4760-91DC-35EBD3C016A7}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/>
+	</Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeFull" Preprocess="preprocessYes" PreprocessorDefinitions="WIN,OMP" OpenMP="OpenMPParallelCode" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Debug|x64">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Release|Win32">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Optimization="optimizeFull" Preprocess="preprocessYes" PreprocessorDefinitions="WIN,OMP" OpenMP="OpenMPParallelCode" RuntimeLibrary="rtMultiThreadedDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Release|x64">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd;h;inc"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="third_party">
+		<File RelativePath=".\third_party\slatec\d1mach.f90"/>
+		<File RelativePath=".\third_party\slatec\daxpy.f90"/>
+		<File RelativePath=".\third_party\slatec\ddcor.f90"/>
+		<File RelativePath=".\third_party\slatec\ddcst.f90"/>
+		<File RelativePath=".\third_party\slatec\ddntl.f90"/>
+		<File RelativePath=".\third_party\slatec\ddntp.f90"/>
+		<File RelativePath=".\third_party\slatec\ddot.f90"/>
+		<File RelativePath=".\third_party\slatec\ddpsc.f90"/>
+		<File RelativePath=".\third_party\slatec\ddpst.f90"/>
+		<File RelativePath=".\third_party\slatec\ddriv3.f90"/>
+		<File RelativePath=".\third_party\slatec\ddscl.f90"/>
+		<File RelativePath=".\third_party\slatec\ddstp.f90"/>
+		<File RelativePath=".\third_party\slatec\ddzro.f90"/>
+		<File RelativePath=".\third_party\slatec\dgbfa.f90"/>
+		<File RelativePath=".\third_party\slatec\dgbsl.f90"/>
+		<File RelativePath=".\third_party\slatec\dgefa.f90"/>
+		<File RelativePath=".\third_party\slatec\dgesl.f90"/>
+		<File RelativePath=".\third_party\slatec\dnrm2.f90"/>
+		<File RelativePath=".\third_party\slatec\dscal.f90"/>
+		<File RelativePath=".\third_party\slatec\fdump.f90"/>
+		<File RelativePath=".\third_party\slatec\i1mach.f90"/>
+		<File RelativePath=".\third_party\slatec\idamax.f90"/>
+		<File RelativePath=".\third_party\slatec\j4save.f90"/>
+		<File RelativePath=".\third_party\slatec\xercnt.f90"/>
+		<File RelativePath=".\third_party\slatec\xerhlt.f90"/>
+		<File RelativePath=".\third_party\slatec\xermsg.f90"/>
+		<File RelativePath=".\third_party\slatec\xerprn.f90"/>
+		<File RelativePath=".\third_party\slatec\xersve.f90"/>
+		<File RelativePath=".\third_party\slatec\xgetua.f90"/></Filter>
+		<File RelativePath=".\src\cabaret_solver.f90"/>
+		<File RelativePath=".\src\chemical_kinetics_solver.f90"/>
+		<File RelativePath=".\src\coarse_particles_method.f90"/>
+		<File RelativePath=".\src\cpm_low_mach_solver.f90"/>
+		<File RelativePath=".\src\cpm_solver.f90"/>
+		<File RelativePath=".\src\droplets_solver.f90"/>
+		<File RelativePath=".\src\fds_low_mach_solver.f90"/>
+		<File RelativePath=".\src\fickean_diffusion_solver.f90"/>
+		<File RelativePath=".\src\fourier_heat_transfer_solver.f90"/>
+		<File RelativePath=".\src\implicit_fourier_heat_transfer_solver.f90"/>
+		<File RelativePath=".\src\lagrangian_droplets_solver.f90"/>
+		<File RelativePath=".\src\lagrangian_particles_solver.f90"/>
+		<File RelativePath=".\src\main.f90"/>
+		<File RelativePath=".\src\particles_solver.f90"/>
+		<File RelativePath=".\src\riemann_solver.f90"/>
+		<File RelativePath=".\src\table_approximated_real_gas.f90"/>
+		<File RelativePath=".\src\viscosity_solver.f90"/></Filter>
+	</Files>
+	<Globals/>
+</VisualStudioProject>
